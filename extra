@@ -1,0 +1,124 @@
+https://code.visualstudio.com/
+https://nodejs.org/en/
+https://github.com/
+https://github.com/Aakashdeveloper
+
+Full App with ang 
+reactive forms
+login/out with JWT
+>>>>>Production<<<<
+MEAN
+Heroku
+Docker
+Nginx
+CI/CD with aws
+
+Testing
+Multiling
+Json Server(mock api)
+Github
+
+
+MEAN>
+Mongo Express Angular Node
+
+>>>>>>>>>>Not<<<<<<
+Any thing about how to make api
+HTML/CSS/JAVASCRIPT/Jquery
+Database
+
+
+NPM
+> Node Package manager
+
+>>>>>> package.json <<<<<<<<<<
+
+> starting point to the application
+> meta data
+> script
+    > start
+    > test 
+    > build
+> packages & version
+
+Json> JavaScript  Object notation
+> Way to represent data
+> key value;
+{
+    name:'John',
+    class:'Ang'
+}
+
+////////////////////////////
+Step to generate package.json
+////////////////////////////
+**NodeJs must be install in system
+> navigate to the folder using cmd/terminal
+> type npm init
+> answer all questions
+> type "yes"
+
+>>>>>>>>>>>>>>><<<<<<<<<<<<<
+local dependency /packages/node_modules > local to folder
+global > installed in the system (generate/test)
+       > Admin permission
+       > Does not add in package.json 
+dev dependency > that use only at time of developing
+
+////////////////////////////
+Step to install local dependency
+////////////////////////////
+> navigate to the folder using cmd/terminal
+> npm i package-name
+
+////////////////////////////
+Step to install dev dependency
+////////////////////////////
+> navigate to the folder using cmd/terminal
+> npm i package-name --save-dev
+
+
+////////////////////////////
+Step to install global dependency
+////////////////////////////
+>>Only one time in one system<<<<<
+#window
+> open cmd as Admin
+> npm i -g @angular/cli
+
+#mac/linux
+> open the terminal
+> sudo npm i -g @angular/cli
+
+
+////////////////////////////
+Step to generate angular app 
+////////////////////////////
+#window
+> open cmd as Admin
+> npm i -g @angular/cli
+
+>>>Rest all time when we want new one system<<<<<
+> navigate to the folder using cmd
+> ng new appname
+
+
+#mac/linux
+> open the terminal
+> sudo npm i -g @angular/cli
+
+>>>Rest all time when we want new one system<<<<<
+> navigate to the folder using cmd
+> ng new appname
+
+///Run////
+> go inside the folder 
+> npm start
+> http://localhost:4200
+
+
+>>>>folder walkthrough
+> single page application
+> building block
+> component in ang 
+

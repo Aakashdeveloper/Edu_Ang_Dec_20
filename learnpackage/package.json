@@ -1,0 +1,23 @@
+{
+  "name": "angapp",
+  "version": "1.0.0",
+  "description": "this is about learning packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "angular",
+    "node"
+  ],
+  "author": "Edureka",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/core": "^11.0.2",
+    "express": "^4.17.1",
+    "rxjs": "^6.6.3"
+  },
+  "devDependencies": {
+    "karma": "^5.2.3"
+  }
+}
