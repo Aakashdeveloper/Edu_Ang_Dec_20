@@ -116,9 +116,58 @@ Step to generate angular app
 > npm start
 > http://localhost:4200
 
-
->>>>folder walkthrough
+>>>>>>>>>><<<<<<<<<<<<<<<<<<<
 > single page application
+> folder walkthrough
 > building block
 > component in ang 
+> Develop home page
 
+
+Typescript is a super set of JavaScript
+
+//////////////////////////////////
+    File walkthrough
+/////////////////////////////////
+tslint.json ==> make structure of code
+tsconfig.spec.json => help to locate test files
+tsconfig.json => it will tell where is build code and which version to target
+tsconfig.app.json => help to locate application file
+ReadMe.md => Details Description of application
+package.json > use for dependency,command and small Description, meta data
+package-lock.json => use for child dependency
+angular.json => first file to run and location all the part of app 
+.editorconfig => for editor standards
+styles.css > common css of application
+polyfills => its help in supporting for all browsers
+index.html> first file load in browser 
+favicon> simple icon 
+env => help to build for prod/dev 
+assets => all static files images css videos
+app > all developemt happen here
+main > this will help to locate main module
+
+>>>>>>>Bootstrap<<<<<<<
+angular.json => main.ts => app.module.ts => app.component.ts
+>>>>>>>Compile<<<<<<<
+browser will run index.html
+
+//////////////////////////////
+    Building Block Of Angular
+//////////////////////////
+
+Modules => Module is parent of application (ngModule)
+Component => HTML,CSS,Logic (component)
+Pipe     => Run time data change (pipe,pipe transform)
+Services => To connect with external agent dependency injection (Injectable)
+Routing  => To manage multiple page (ngModule)
+ 
+main-modules(app.modules.ts)
+main-compo  (app.component.ts)
+
+npm start > 
+
+/////
+generate Component
+/////
+ng g c footer
