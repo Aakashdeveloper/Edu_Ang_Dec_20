@@ -1,0 +1,27 @@
+<div>
+    <div class="quickSearchContainer">
+        <p class="quickSearchHeading">
+            Quick Search
+        </p>
+        <p class="quickSearchSubHeading">
+            Discover Trip With us
+        </p>
+        <br/>
+        <a *ngFor="let hotel of hotelType">
+            <div class="tileContainer">
+                <div class="tileComponent1">
+                    <img [src]="hotel.image"/>
+                </div>
+                <div class="tileComponent2">
+                    <div class="componentHeading">
+                        {{hotel.name}}
+                    </div>
+                    <div class="componentSubHeading">
+                        Start Your {{hotel.name | lowercase}} Trip with Us
+                        <p>As low cost of {{hotel.cost | currency:'AUD'}}</p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>

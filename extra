@@ -171,3 +171,36 @@ npm start >
 generate Component
 /////
 ng g c footer
+
+///////////
+Binding
+////////
+One Way Binding
+
+> Data Binding {{}}
+> Property Binding []
+> Event Binding ()
+
+Two Way binding [()]
+
+
+///////Structural directive///
+ngStyle
+*ngClass
+*ngFor
+*ngIf
+
+
+///////Pipe///
+lowercase
+uppercase
+titlecase
+currency
+date
+perctange
+
+
+//////////////
+map
+filter
+indexof

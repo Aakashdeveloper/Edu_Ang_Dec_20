@@ -6,6 +6,9 @@ import {BrowserModule} from '@angular/platform-browser';
 import {AppComponent} from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './Header/header.component';
+import { HomeComponent } from './Home/home.component';
+import { QuickSearchComponent } from './Home/QuickSearch.Component';
+import { SearchComponent } from './Home/Search.Component';
 
 // Decorator (meta data)
 @NgModule({
@@ -18,7 +21,10 @@ import { HeaderComponent } from './Header/header.component';
     declarations:[
         AppComponent,
         FooterComponent,
-        HeaderComponent
+        HeaderComponent,
+        HomeComponent,
+        SearchComponent,
+        QuickSearchComponent
     ],
 
     // All Services will declare here

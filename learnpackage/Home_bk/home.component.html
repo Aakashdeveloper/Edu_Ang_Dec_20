@@ -1,0 +1,8 @@
+<div>
+   <h1>{{title}}</h1>
+   <p>{{description}}</p>
+   <img [src]="imagePath"/>
+   <h2>{{condition?myText:'Button Already Clicked'}}</h2>
+   <button (click)="toggleText()"  [ngStyle]="{'color':condition?'green':'red'}">
+   Click Me</button>
+</div>
