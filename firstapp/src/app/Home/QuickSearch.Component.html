@@ -7,21 +7,23 @@
             Discover Trip With us
         </p>
         <br/>
-        <a *ngFor="let hotel of hotelType">
-            <div class="tileContainer">
-                <div class="tileComponent1">
-                    <img [src]="hotel.image"/>
-                </div>
-                <div class="tileComponent2">
-                    <div class="componentHeading">
-                        {{hotel.name}}
+        <span *ngFor="let tripType of hotelType">
+            <a [routerLink]="['/listing',tripType.trip]">
+                <div class="tileContainer">
+                    <div class="tileComponent1">
+                        <img [src]="tripType.image"/>
                     </div>
-                    <div class="componentSubHeading">
-                        Start Your {{hotel.name | lowercase}} Trip with Us
-                        <p>As low cost of {{hotel.cost | currency:'AUD'}}</p>
+                    <div class="tileComponent2">
+                        <div class="componentHeading">
+                            {{tripType.name | myTextUpper:'upper':'abc'}}
+                        </div>
+                        <div class="componentSubHeading">
+                            Start Your {{tripType.name | myTextUpper:'lower'}} Trip with Us
+                            <p>As low cost of {{tripType.cost | discount:500 | currency:'INR' }}</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </a>
+            </a>
+        </span>
     </div>
 </div>

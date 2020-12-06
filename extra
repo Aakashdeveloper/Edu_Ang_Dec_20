@@ -204,3 +204,33 @@ perctange
 map
 filter
 indexof
+
+var a = [0,1,2,3]
+
+a.map((data) => { return data*2})
+[0,2,4,6]
+
+a.filter((data) => { return data*2})
+[1,2,3]
+
+filter only return those value for which output is true
+
+
+/////////////
+custome pipe 
+second page
+link 2 pages 
+make search bar 
+two way binding
+
+
+//////////
+make search bar 
+loader
+services
+directive
+details
+
+//////////
+forms 
+bookings
