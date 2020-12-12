@@ -6,4 +6,6 @@ import {Component} from '@angular/core';
     styles:['h1{text-align:center}']
 })
 
-export class HeaderComponent{}
+export class HeaderComponent{
+    
+}

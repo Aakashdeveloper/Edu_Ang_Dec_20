@@ -13,7 +13,11 @@ import { ListingComponent } from './listing/listing.component';
 import { DiscountPipe } from './pipes/discount.pipe';
 import { MyTextPipe } from './pipes/myUpper.pipe';
 import { RouterModule} from '@angular/router';
-import {FormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { HomeService } from './services/home.service';
+import { ListingService } from './services/listing.service';
+import { HotelSearchPipe } from './pipes/hotel.pipe';
 
 // Decorator (meta data)
 @NgModule({
@@ -25,7 +29,8 @@ import {FormsModule} from '@angular/forms';
             {path:'home',component:HomeComponent},
             {path:'',component:HomeComponent}
         ]),
-        FormsModule
+        FormsModule,
+        HttpClientModule
     ],
 
     // All Component and pipe
@@ -38,12 +43,15 @@ import {FormsModule} from '@angular/forms';
         SearchComponent,
         QuickSearchComponent,
         DiscountPipe,
-        ListingComponent
-        
+        ListingComponent,
+        HotelSearchPipe
     ],
 
     // All Services will declare here
-    providers:[],
+    providers:[
+        HomeService,
+        ListingService
+    ],
 
     // Only and one first/main Component
     bootstrap:[
