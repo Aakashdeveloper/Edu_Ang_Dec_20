@@ -23,9 +23,16 @@ export class ListingComponent implements OnInit{
 
     ngOnInit(){
         this.id = this.route.snapshot.params['id'];
+        sessionStorage.setItem('tripid',this.route.snapshot.params['id'])
         console.log('>>>>>>> ngOnInit <<<<<<<<')
         this.listingService.getHotelPerTrip(this.id)
         .subscribe((data) => this.hotels=data)
+    }
+
+    dataRecive(roomId: string){
+        this.roomtype  = roomId
+        //we can call api on the basis of this.id i.e tripid and roomId which is
+        //category of room
     }
 
 }

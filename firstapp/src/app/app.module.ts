@@ -18,6 +18,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeService } from './services/home.service';
 import { ListingService } from './services/listing.service';
 import { HotelSearchPipe } from './pipes/hotel.pipe';
+import { RoomFilterComponent } from './hotelFilter/roomFilter.component';
+import { HotelDetails } from './details/detail.component';
+import { DetailService } from './services/details.service';
 
 // Decorator (meta data)
 @NgModule({
@@ -26,6 +29,7 @@ import { HotelSearchPipe } from './pipes/hotel.pipe';
         BrowserModule,
         RouterModule.forRoot([
             {path:'listing/:id',component:ListingComponent},
+            {path:'details/:id',component:HotelDetails},
             {path:'home',component:HomeComponent},
             {path:'',component:HomeComponent}
         ]),
@@ -44,13 +48,16 @@ import { HotelSearchPipe } from './pipes/hotel.pipe';
         QuickSearchComponent,
         DiscountPipe,
         ListingComponent,
-        HotelSearchPipe
+        HotelSearchPipe,
+        RoomFilterComponent,
+        HotelDetails
     ],
 
     // All Services will declare here
     providers:[
         HomeService,
-        ListingService
+        ListingService,
+        DetailService
     ],
 
     // Only and one first/main Component

@@ -12,8 +12,35 @@
 </div>
 <div class="row">
     <div class="col-md-2">
-        <app-roomfilter [filterName]="2000" (roomClicked)="dataRecive($event)"></app-roomfilter>
+        <div class="radio">
+            <label>
+                <input type="radio"
+                value="1" 
+                name="roomtype"
+                [(ngModel)]="roomtype"
+                />Deluxe Room
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio"
+                value="2" 
+                name="roomtype"
+                [(ngModel)]="roomtype"
+                />Premium Room
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio"
+                value="3" 
+                name="roomtype"
+                [(ngModel)]="roomtype"
+                />Budget Room
+            </label>
+        </div>
     </div>
+    roomType is   {{roomtype}}
     <div *ngIf="hotels && hotels.length else noData">
         <div class="col-md-10">
             <div class="container-fluid">
@@ -27,7 +54,7 @@
                                     </div>
                                     <div class="col-sm-7">
                                         <div class="hotel_name">
-                                            <span><a [routerLink]="['/details',hotel._id]">{{hotel.name}}</a></span>
+                                            <span>{{hotel.name}}</span>
                                             <div class="city_name">{{hotel.city_name}}</div>
                                             <div class="address-text">{{hotel.locality}}</div>
                                             <div class="address-text">{{hotel.address}}</div>
