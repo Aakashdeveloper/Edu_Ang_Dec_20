@@ -1,0 +1,22 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "name": "Lisa"
+    },
+    {
+      "firstname": "Nikita",
+      "lastname": "Singh",
+      "email": "nikita@gmail.com",
+      "password": "12345678",
+      "codelang": "Node",
+      "id": 3
+    }
+  ],
+  "hotel": [
+    {
+      "id": 1,
+      "name": "Taj"
+    }
+  ]
+}
