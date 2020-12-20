@@ -31,7 +31,8 @@ import { DetailService } from './services/details.service';
             {path:'listing/:id',component:ListingComponent},
             {path:'details/:id',component:HotelDetails},
             {path:'home',component:HomeComponent},
-            {path:'',component:HomeComponent}
+            {path:'',component:HomeComponent},
+            {path:'*',component:HomeComponent}
         ]),
         FormsModule,
         HttpClientModule

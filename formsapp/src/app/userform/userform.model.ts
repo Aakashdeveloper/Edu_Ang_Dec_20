@@ -4,6 +4,6 @@ export class IUser{
         public lastname: string,
         public email: string,
         public password: string,
-        public codelang:string
+        public codelang:string,
     ){}
 }
