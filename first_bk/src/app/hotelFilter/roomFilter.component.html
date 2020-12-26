@@ -1,0 +1,31 @@
+<h3>Filter is {{filterName}}</h3>
+<div class="radio">
+    <label>
+        <input type="radio"
+        value="1" 
+        name="roomtype"
+        [(ngModel)]="roomtype"
+        (change) = "onSelectRoom()"
+        />Deluxe Room
+    </label>
+</div>
+<div class="radio">
+    <label>
+        <input type="radio"
+        value="2" 
+        name="roomtype"
+        [(ngModel)]="roomtype"
+        (change) = "onSelectRoom()"
+        />Premium Room
+    </label>
+</div>
+<div class="radio">
+    <label>
+        <input type="radio"
+        value="3" 
+        name="roomtype"
+        [(ngModel)]="roomtype"
+        (change) = "onSelectRoom()"
+        />Budget Room
+    </label>
+</div>

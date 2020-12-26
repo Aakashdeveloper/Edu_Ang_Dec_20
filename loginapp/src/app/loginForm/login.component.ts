@@ -11,7 +11,8 @@ import { Router } from '@angular/router';
 
 export class LoginComponent{
 
-    constructor(private loginService:LoginService) {}
+    constructor(private loginService:LoginService,
+                private router:Router) {}
 
     myUser = new ILogin('','')
 
@@ -27,5 +28,6 @@ export class LoginComponent{
         sessionStorage.setItem('Role_Type',typeOfUser);
         console.log("now to profile page")
         console.log('Role_Type',typeOfUser)
+        this.router.navigate(['/profile'])
     }
 }

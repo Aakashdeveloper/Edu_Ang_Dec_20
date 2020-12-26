@@ -1,0 +1,29 @@
+<div>
+    <div class="quickSearchContainer">
+        <p class="quickSearchHeading">
+            Quick Search
+        </p>
+        <p class="quickSearchSubHeading">
+            Discover Trip With us
+        </p>
+        <br/>
+        <span *ngFor="let tripType of hotelType">
+            <a [routerLink]="['/listing',tripType.trip]">
+                <div class="tileContainer">
+                    <div class="tileComponent1">
+                        <img [src]="tripType.image"/>
+                    </div>
+                    <div class="tileComponent2">
+                        <div class="componentHeading">
+                            {{tripType.name | myTextUpper:'upper':'abc'}}
+                        </div>
+                        <div class="componentSubHeading">
+                            Start Your {{tripType.name | myTextUpper:'lower'}} Trip with Us
+                            <p>As low cost of {{tripType.cost | discount:500 | currency:'INR' }}</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </span>
+    </div>
+</div>

@@ -1,0 +1,85 @@
+
+<div class="panel panel-primary">
+    <div class="panel-body">
+        <div class="form-group">
+            <input class="form-control" placeholder="Enter Hotel Name"
+            [(ngModel)]="userInput" type="text"/>
+        </div>
+        <div>
+            <p>Your are searching for hotel {{userInput}}</p>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-2">
+        <div class="radio">
+            <label>
+                <input type="radio"
+                value="1" 
+                name="roomtype"
+                [(ngModel)]="roomtype"
+                />Deluxe Room
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio"
+                value="2" 
+                name="roomtype"
+                [(ngModel)]="roomtype"
+                />Premium Room
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio"
+                value="3" 
+                name="roomtype"
+                [(ngModel)]="roomtype"
+                />Budget Room
+            </label>
+        </div>
+    </div>
+    roomType is   {{roomtype}}
+    <div *ngIf="hotels && hotels.length else noData">
+        <div class="col-md-10">
+            <div class="container-fluid">
+                <div class="main-heading">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="Item" *ngFor="let hotel of hotels | hotelSearch:userInput:roomtype">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <img class="Image" [src]="hotel.thumb"/>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <div class="hotel_name">
+                                            <span>{{hotel.name}}</span>
+                                            <div class="city_name">{{hotel.city_name}}</div>
+                                            <div class="address-text">{{hotel.locality}}</div>
+                                            <div class="address-text">{{hotel.address}}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr/>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="cuisine">Cost For Night</div>
+                                        
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <div class="cuisine_data">{{hotel.cost}}</div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ng-template #noData>
+        <img src="../../assets/loading.gif"/>
+    </ng-template>
+</div>

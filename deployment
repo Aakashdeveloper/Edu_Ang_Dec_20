@@ -1,0 +1,8 @@
+>go inside app using cmd/ terminal
+> npm run build
+
+git add README.md
+git commit -m "first commit"
+git branch -M master
+git remote add origin https://github.com/Aakashdeveloper/EduProdAng.git
+git push -u origin master

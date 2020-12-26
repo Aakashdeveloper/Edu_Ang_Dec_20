@@ -8,6 +8,11 @@ import { LoginComponent } from './loginForm/login.component';
 import { RegisterComponent } from './registerForm/register.component';
 import { RegisterService } from './registerForm/register.service';
 import { LoginService } from './loginForm/login.service';
+import { HeaderComponent } from './Header/header.component';
+import { ProfileComponent } from './profile/profile.component';
+import { AdminService } from './Admin/Admin.service';
+import { AdminPage } from './Admin/Admin.component';
+import { LoginGaurdService } from './login-gaurd.service';
 
 
 @NgModule({
@@ -15,7 +20,10 @@ import { LoginService } from './loginForm/login.service';
     declarations:[
         AppComponent,
         LoginComponent,
-        RegisterComponent
+        RegisterComponent,
+        HeaderComponent,
+        ProfileComponent,
+        AdminPage
     ],
 
     imports:[
@@ -26,7 +34,10 @@ import { LoginService } from './loginForm/login.service';
     ],
     providers:[
         RegisterService,
-        LoginService
+        LoginService,
+        AdminService,
+        LoginGaurdService,
+        LoginGaurdService
     ],
     bootstrap:[
         AppComponent
