@@ -1,0 +1,16 @@
+<p>view-parent works!</p>
+<h3>Using View Child</h3>
+<button class="btn btn-success" (click)="increase()">Increase</button>
+<button class="btn btn-danger" (click)="decrease()">Decrease</button>
+<app-counter></app-counter>
+
+
+<select [(ngModel)] = "selectedValue">
+    <option *ngFor="let item of items;" [value]="item.name">{{item.name}}</option>
+</select>
+<div [ngSwitch]="selectedValue">
+    <div *ngSwitchCase="'One'">One is Selected</div>
+    <div *ngSwitchCase="'Two'">Two is Selected</div>
+    <div *ngSwitchCase="'Three'">Three is Selected</div>
+    <div *ngSwitchDefault>Default is Selected</div>
+</div>

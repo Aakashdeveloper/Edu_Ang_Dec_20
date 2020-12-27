@@ -2,7 +2,8 @@ import {Pipe,PipeTransform} from '@angular/core';
 import {IHotel} from '../listing/hotel.model';
 
 @Pipe({
-    name:'hotelSearch'
+    name:'hotelSearch',
+    pure:true
 })
 
 export class HotelSearchPipe implements PipeTransform{

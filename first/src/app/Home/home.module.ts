@@ -7,6 +7,7 @@ import { SearchComponent } from './Search.Component';
 import { HomeService } from '../services/home.service';
 import { AppRoutingModule } from '../app-routing.module';
 import { SharedModule } from '../shared/shared.module';
+import { ChangeColorDirective } from './color.directive';
 
 @NgModule({
     imports: [
@@ -18,7 +19,8 @@ import { SharedModule } from '../shared/shared.module';
         HomeComponent,
         SearchComponent,
         QuickSearchComponent,
-        DiscountPipe
+        DiscountPipe,
+        ChangeColorDirective
     ],
     providers:[
         HomeService

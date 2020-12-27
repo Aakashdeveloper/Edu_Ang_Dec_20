@@ -16,6 +16,9 @@ import { HotelDetails } from './details/detail.component';
 import { DetailService } from './services/details.service';
 import { HomeModule } from './Home/home.module';
 import { AppRoutingModule } from './app-routing.module';
+import { CounterParentComponent } from './view-parent/view-parent.component';
+import { CounterChildComponent } from './view-child/view-child.component';
+
 
 // Decorator (meta data)
 @NgModule({
@@ -36,7 +39,9 @@ import { AppRoutingModule } from './app-routing.module';
         ListingComponent,
         HotelSearchPipe,
         RoomFilterComponent,
-        HotelDetails
+        HotelDetails,
+        CounterParentComponent,
+        CounterChildComponent
     ],
 
     // All Services will declare here

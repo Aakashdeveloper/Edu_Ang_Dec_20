@@ -252,13 +252,13 @@ https://developerfunnel.herokuapp.com/hotellist/1?hcost=1000&lcost=500
 one module and service can be a part of n number of modules
 one component and pipe can be part of only one module
 
-custome directive
-pure impure
-i18n
-Testing
-aws
 viewchild
+pure impure
 ngswitch
-debug
+custome directive
+i18n
+aws
 Docker
 nginx
+Testing
+debug
